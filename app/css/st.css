@@ -1,0 +1,95 @@
+.container{
+    width: 61%;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    width: 100%;
+    max-width: 1925px;
+    min-height: 1120px;
+    margin: 0 auto;
+    background: url(../img/header-bg.png) no-repeat center;
+    background-size: cover;
+    color: #000;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.header .header__top{
+    width: 100%;
+    max-width: 1925px;
+    background-color: #fff;
+    opacity: 0.8;
+}
+.header .header__top .header__container{
+    width: 61%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header .header__top .header__container .header__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header__top .header__container .header__logo img{
+    margin-right: 10px;
+}
+.header .header__top .header__container .header__logo p{
+    font-size: 26px;
+    line-height: 24.83px;
+}
+.header .header__top .header__container .header__menu{
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.header .header__top .header__container .header__menu a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 40px;
+}
+.header .header__mine{
+    text-align: center;
+    color: #fff;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+}
+.header .header__mine h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-top: 411px;
+}
+.header .header__mine h2{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.header .header__mine button{
+    width: 150px;
+    min-height: 50px;
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 60px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    box-sizing: content-box;
+    padding: 0;
+}
+.header .header__mine button a{
+    text-decoration: none;
+    color: #fff; 
+}
+
