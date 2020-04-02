@@ -226,7 +226,8 @@
 .portfolio .portfolio__grid .portfolio__item img{
     width: 100%;
     max-width: 481px;
-    height: 530px;
+    min-height: 530px;
+    object-fit: cover;
 }
 .portfolio .portfolio__grid .portfolio__item .shadow{
     display: none;
@@ -310,14 +311,14 @@
     line-height: 20px;
     text-align: justify;
 }
-.about .features{
+.about .virtues{
     width: 100%;
     max-width: 1925px;
     min-height: 260px;
     background: url(../img/features-bg.png) no-repeat center;
     background-size: cover;
 }
-.about .features .features__inner{
+.about .virtues .virtues__inner{
     width: 55%;
     max-width: 1048px;
     margin: 0 auto;
@@ -327,7 +328,7 @@
     padding: 50px 0;
     text-align: center;
 } 
-.about .features .features__inner .features__item{
+.about .virtues .virtues__inner .virtues__item{
     display: block;
     color: #ffffff;
     font-family: 'Roboto';
@@ -335,12 +336,98 @@
     line-height: 20px;
 }  
 
-.about .features .features__inner .features__item p{
+.about .virtues .virtues__inner .virtues__item p{
     font-size: 50px;
     padding: 32px 0 26px;
 }
-.about .features .features__inner .features__item span{
+.about .virtues .virtues__inner .virtues__item span{
     font-size: 19px;
 }
 
 /* team */
+
+.team{
+    width: 100%;
+    max-width: 1925px;
+    margin: 0 auto;
+}
+.team .team__gallery{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 97px auto 151px;
+}
+.team .team__gallery .team__item{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+.team .team__gallery .team__item .team__image{
+    position: relative;
+    width: 100%;
+    max-width: 270px;
+    min-height: 321px;
+}
+.team .team__gallery .team__item .team__image .team__social{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.team .team__gallery .team__item:hover .team__social{
+    opacity: 1;
+    transition: ease-in 0.5s;
+}
+.team .team__gallery .team__item p{
+    color: #000000;
+    text-transform: uppercase;
+    padding: 29px 0 18px;
+}
+.team .team__gallery .team__item span{
+    color: #0075d0;
+}
+.team .team__gallery .team__item .team-circle{
+    width: 9px;
+    height: 9px;
+    background-color: #959595;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.team .join{
+    width: 100%;
+    max-width: 1925px;
+    background-color: #0075d0;
+    display: block;
+    text-align: center;
+}
+.team .join button{
+    margin: 57px auto 50px;
+    width: 100%;
+    max-width: 244px;
+    min-height: 60px;
+    border-radius: 27px;
+    border: 2px solid #ffffff;
+    box-sizing: content-box;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* feature */
+
+
