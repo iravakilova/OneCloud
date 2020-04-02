@@ -2,7 +2,7 @@
     width: 61%;
     margin: 0 auto;
 }
-.title{
+.title-black{
     color: #000000;
     font-family: 'Roboto';
     font-size: 28px;
@@ -12,7 +12,7 @@
     text-align: center;
     padding-top: 150px;
 }
-.article{
+.article-black{
     color: #000000;
     font-family: 'Roboto';
     font-size: 15px;
@@ -21,7 +21,25 @@
     text-align: center;
     padding-top: 27px;
 }
-
+.title-white{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 150px;
+}
+.article-white{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 27px;
+}
 
 @import "header";
 @import "services";
