@@ -268,6 +268,103 @@
 
 /* testimonials */
 
+.testimonials{
+    width: 100%;
+    max-width: 1925px;
+    margin: 0 auto;
+}
+.testimonials .testimonials__slider {
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.testimonials .testimonials__slider input[name="switch"] {
+    display: none; 
+}
+.testimonials .testimonials__slider .switch {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%; 
+}
+.testimonials .testimonials__slider .switch label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #959595; 
+}
+#btn1:checked ~ .switch label[for="btn1"], 
+#btn2:checked ~ .switch label[for="btn2"], 
+#btn3:checked ~ .switch label[for="btn3"] {
+    background-color: #2b2b2b;
+}
+.testimonials .testimonials__inner{
+    width: 1170px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonials .testimonials__inner .testimonials__slides{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 97px  0 60px;
+}
+.testimonials .testimonials__inner .testimonials__slides .testimonials__item{
+    width: 100%;
+    max-width: 368px;
+    display: flex;
+    align-items: start;
+}
+.testimonials .testimonials__inner .testimonials__slides .testimonials__item img{
+    border: 5px solid #b9b9b9;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonials .testimonials__inner .testimonials__slides .testimonials__item h4{
+    color: #0075d0;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+.testimonials .testimonials__inner .testimonials__slides .testimonials__item span{
+    color: #141414;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 8px;
+}
+.testimonials .testimonials__inner .testimonials__slides .testimonials__item p{
+    color: #ffff;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #0075d0;
+    padding: 15px 27px 11px 14px;
+}
+
+#btn1:checked ~ .testimonials__inner .testimonials__slides {
+    transform: translate(0); 
+}
+  
+  #btn2:checked ~ .testimonials__inner .testimonials__slides {
+    transform: translate(-66%); 
+}
+  
+  #btn3:checked ~ .testimonials__inner .testimonials__slides {
+    transform: translate(66%); 
+}
+
 /* about */
 
 .about{
