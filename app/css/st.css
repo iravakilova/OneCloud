@@ -327,29 +327,24 @@
     border: 5px solid #b9b9b9;
     border-radius: 50%;
     margin-right: 20px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 20px;
 }
 .testimonials .testimonials__inner .testimonials__slides .testimonials__item h4{
     color: #0075d0;
-    font-family: 'Roboto';
-    font-size: 15px;
     font-weight: 700;
     padding-bottom: 8px;
 }
 .testimonials .testimonials__inner .testimonials__slides .testimonials__item span{
     color: #141414;
-    font-family: 'Roboto';
-    font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
     padding-bottom: 8px;
 }
 .testimonials .testimonials__inner .testimonials__slides .testimonials__item p{
     color: #ffff;
-    font-family: 'Roboto';
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
     background-color: #0075d0;
+    font-weight: 400;
     padding: 15px 27px 11px 14px;
 }
 
@@ -357,11 +352,11 @@
     transform: translate(0); 
 }
   
-  #btn2:checked ~ .testimonials__inner .testimonials__slides {
+#btn2:checked ~ .testimonials__inner .testimonials__slides {
     transform: translate(-66%); 
 }
   
-  #btn3:checked ~ .testimonials__inner .testimonials__slides {
+#btn3:checked ~ .testimonials__inner .testimonials__slides {
     transform: translate(66%); 
 }
 
@@ -530,10 +525,80 @@
 .feature{
     width: 100%;
     max-width: 1925px;
+    margin: 0 auto;  
+}
+.feature .feature__slider {
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
     margin: 0 auto;
-    
+}
+.feature .feature__slider input[name="switch"] {
+    display: none; 
+}
+.feature .feature__slider .switch {
+    width: 100%; 
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+}
+.feature .feature__slider .switch label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid #c2c2c2;
+    background-color: #fff; 
+}
+#btn4:checked ~ .switch label[for="btn4"], 
+#btn5:checked ~ .switch label[for="btn5"], 
+#btn6:checked ~ .switch label[for="btn6"] {
+    background-color: #000;
+}
+.feature .feature__inner{
+    width: 1170px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.feature .feature__inner .feature__slides{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 128px 0 60px;
+}
+.feature .feature__inner .feature__slides .feature__item{
+    width: 100%;
+    max-width: 202px;
+    display: flex;
+    align-items: start;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.feature .feature__inner .feature__slides .feature__item span{
+    font-weight: 300;
 }
 
+#btn4:checked ~ .feature__inner .feature__slides {
+    transform: translate(0); 
+}
+  
+#btn5:checked ~ .feature__inner .feature__slides {
+    transform: translate(-50%); 
+}
+  
+#btn6:checked ~ .feature__inner .feature__slides {
+    transform: translate(50%); 
+}
 
 .feature .feature__second{
     background-color: #f8f8f8;

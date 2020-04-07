@@ -1,55 +1,134 @@
 /* feature */
 
 .feature {
+  width: 100%;
+  max-width: 1925px;
+  margin: 0 auto;
+
+  .feature__slider {
+    position: relative;
     width: 100%;
-    max-width: 1925px;
+    max-width: 1170px;
     margin: 0 auto;
-  
-    .feature__second {
-      background-color: #f8f8f8;
-  
-      .feature__grid {
-        padding: 97px 0 150px;
-        width: 61%;
-        max-width: 1170px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-  
-        .features__img {
-          width: 100%;
-          max-width: 292px;
-          height: 201px;
-        }
-  
-        .feature__descr {
-          background-color: #ffff;
-          padding: 19px 25px 0px 20px;
-          font-family: 'Roboto';
-          font-weight: 400;
-          text-align: justify;
-          word-wrap: break-word;
-  
-          h4 {
-            color: #000000;
-            font-size: 19px;
-            padding-bottom: 17px;
-          }
-  
-          p {
-            color: #6e6e6e;
-            font-size: 15px;
-            padding-bottom: 30px;
-          }
-  
-          button {
-            display: block;
-            cursor: pointer;
-            border: none;
-            background: transparent;
-          }
-        }
+
+    input[name="switch"] {
+      display: none;
+    }
+
+    .switch {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      text-align: center;
+
+      label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin: 0 10px;
+        border-radius: 50%;
+        border: 1px solid #c2c2c2;
+        background-color: #fff;
       }
     }
   }
+}
+
+#btn4:checked ~ .switch label[for="btn4"], #btn5:checked ~ .switch label[for="btn5"], #btn6:checked ~ .switch label[for="btn6"] {
+  background-color: #000;
+}
+
+.feature .feature__inner {
+  width: 1170px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  .feature__slides {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 128px 0 60px;
+
+    .feature__item {
+      width: 100%;
+      max-width: 202px;
+      display: flex;
+      align-items: start;
+      color: #000000;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 20px;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+#btn4:checked ~ .feature__inner .feature__slides {
+  transform: translate(0);
+}
+
+#btn5:checked ~ .feature__inner .feature__slides {
+  transform: translate(-50%);
+}
+
+#btn6:checked ~ .feature__inner .feature__slides {
+  transform: translate(50%);
+}
+
+.feature .feature__second {
+  background-color: #f8f8f8;
+
+  .feature__grid {
+    padding: 97px 0 150px;
+    width: 61%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    .features__img {
+      width: 100%;
+      max-width: 292px;
+      height: 201px;
+    }
+
+    .feature__descr {
+      background-color: #ffff;
+      padding: 19px 25px 0px 20px;
+      font-family: 'Roboto';
+      font-weight: 400;
+      text-align: justify;
+      word-wrap: break-word;
+
+      h4 {
+        color: #000000;
+        font-size: 19px;
+        padding-bottom: 17px;
+      }
+
+      p {
+        color: #6e6e6e;
+        font-size: 15px;
+        padding-bottom: 30px;
+      }
+
+      button {
+        display: block;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+      }
+    }
+  }
+}
