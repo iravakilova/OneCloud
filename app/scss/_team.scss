@@ -1,93 +1,154 @@
 /* team */
 
 .team {
+  width: 100%;
+  max-width: 1925px;
+  margin: 0 auto;
+
+  .team__gallery {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 97px auto 151px;
+
+    .team__item {
+      font-family: 'Roboto';
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: center;
+
+      .team__image {
+        position: relative;
+
+        .team__avatar{
+          display: block;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .team__social {
+          display: flex;
+          justify-content: space-around;
+          align-items: start;
+          flex-direction: column;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+
+      &:hover .team__social {
+        opacity: 1;
+        transition: ease-in 0.5s;
+      }
+
+      p {
+        color: #000000;
+        text-transform: uppercase;
+        padding: 29px 0 18px;
+      }
+
+      span {
+        color: #0075d0;
+      }
+
+      .team-circle {
+        width: 9px;
+        height: 9px;
+        background-color: #959595;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 17px;
+      }
+    }
+  }
+
+  .join {
     width: 100%;
     max-width: 1925px;
-    margin: 0 auto;
+    background-color: #0075d0;
+    display: block;
+    text-align: center;
+
+    button {
+      margin: 57px auto 50px;
+      width: 100%;
+      max-width: 244px;
+      min-height: 60px;
+      border-radius: 27px;
+      border: 2px solid #ffffff;
+      box-sizing: content-box;
+      background: transparent;
+      color: #ffffff;
+      font-family: 'Roboto';
+      font-size: 17px;
+      font-weight: 400;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px){
+
+  .team {
+    min-width : 768px;
+    max-width : 1024px;
   
     .team__gallery {
       width: 100%;
-      max-width: 1170px;
+      max-width : 768px;
       margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      margin: 97px auto 151px;
+      margin: 50px auto 75px;
   
       .team__item {
-        font-family: 'Roboto';
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 20px;
-        text-align: center;
+        font-size: 10px;
+        margin-right: 10px;
+
+        &:last-child{
+          margin-right: 0px;
+        }
   
         .team__image {
           position: relative;
-          width: 100%;
-          max-width: 270px;
-          min-height: 321px;
-  
-          .team__social {
-            display: flex;
-            justify-content: space-around;
-            align-items: start;
-            flex-direction: column;
-            position: absolute;
+
+          img{
+            display: block;
+            width: 70%;
+          }
+
+          .team__avatar{
+            display: block;
             width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            opacity: 0;
+            object-fit: cover;
           }
         }
   
-        &:hover .team__social {
-          opacity: 1;
-          transition: ease-in 0.5s;
-        }
-  
         p {
-          color: #000000;
-          text-transform: uppercase;
-          padding: 29px 0 18px;
-        }
-  
-        span {
-          color: #0075d0;
+          padding: 15px 0 10px;
         }
   
         .team-circle {
-          width: 9px;
-          height: 9px;
-          background-color: #959595;
-          border-radius: 50%;
-          margin: 0 auto;
-          margin-top: 17px;
+          margin-top: 10px;
         }
       }
     }
   
     .join {
-      width: 100%;
-      max-width: 1925px;
-      background-color: #0075d0;
-      display: block;
-      text-align: center;
-  
-      button {
-        margin: 57px auto 50px;
-        width: 100%;
-        max-width: 244px;
-        min-height: 60px;
-        border-radius: 27px;
-        border: 2px solid #ffffff;
-        box-sizing: content-box;
-        background: transparent;
-        color: #ffffff;
-        font-family: 'Roboto';
-        font-size: 17px;
-        font-weight: 400;
-        text-transform: uppercase;
-      }
+      min-width : 768px;
+      max-width : 1024px;
     }
   }
+
+}
+

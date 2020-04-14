@@ -99,3 +99,46 @@
       }
     }
   }
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px){
+
+    .header {
+      min-width : 768px;
+      max-width : 1024px;
+      min-height: 1024px;
+    
+      .header__top {
+        width: 100%;
+        min-width : 768px;
+        max-width : 1024px;
+    
+        .header__container {
+          width: 90%;
+
+          padding: 10px 0;
+    
+          .header__logo {
+    
+            img {
+              margin-right: 5px;
+            }
+    
+            p {
+              font-size: 18px;
+              line-height: 16px;
+            }
+          }
+    
+          .header__menu {
+            font-size: 10px;
+            line-height: 16px;
+    
+            a {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+    
+  }

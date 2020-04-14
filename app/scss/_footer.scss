@@ -95,3 +95,101 @@
       text-align: center;
     }
   }
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px){
+
+    .footer {
+      width: 100%;
+      min-width : 768px;
+      max-width : 1024px;
+      font-size: 10px;
+    
+      .footer__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 768px;
+    
+        h4 {
+          font-size: 14px;
+          padding-bottom: 5px;
+        }
+    
+        .footer__line {
+          height: 2px;
+          margin-bottom: 15px;
+        }
+    
+        .footer__item {
+          margin-right: 0px;
+          width: 100%;
+          min-width : 768px;
+          max-width : 1024px;
+          display: block;
+          text-align: left;
+          padding-bottom: 30px;
+    
+          &:first-child {
+            margin-right: 0px;
+            width: 100%;
+            min-width : 768px;
+            max-width : 1024px;
+            display: block;
+          }
+    
+          &:last-child {
+            margin-right: 0px;
+            width: 100%;
+            min-width : 768px;
+            max-width : 1024px;
+            display: block;
+          }
+    
+          h5 {
+            font-size: 15px;
+            font-weight: 700;
+          }
+    
+          .contact-item {
+            padding-top: 15px;
+    
+            img {
+              vertical-align: middle;
+              padding-right: 17px;
+            }
+          }
+    
+          input {
+            width: 100%;
+            max-width: 268px;
+            height: 40px;
+            border: 1px solid #d3d3d3;
+            background-color: #ebebeb;
+            margin-bottom: 10px;
+            outline: none;
+          }
+        }
+    
+        .footer__button button {
+          color: #ffff;
+          text-transform: uppercase;
+          background-color: #3d3d3d;
+          border: none;
+          padding: 16px 29px 13px;
+          cursor: pointer;
+          outline: none;
+        }
+      }
+    
+      .footer__end {
+        font-size: 14px;
+        padding-bottom: 27px;
+        text-align: center;
+      }
+    }
+
+  }

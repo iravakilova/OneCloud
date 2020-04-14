@@ -54,3 +54,35 @@
       }
     }
   }
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px){
+
+    .services {
+      width: 100%;
+      min-width : 768px;
+      max-width : 1024px;
+    
+      .services__inner {
+        margin: 0 5%;
+        padding: 50px 0 75px;
+    
+        .services__item {
+    
+          .services__image {
+            width: 80px;
+            height: 80px;
+          }
+          img {
+            width: 50%;
+            height: auto;
+          }
+          p {
+            font-size: 10px;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+
+
+  }

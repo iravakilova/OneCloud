@@ -95,3 +95,25 @@
       }
     }
   }
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px){
+
+    .feedback {
+      width: 100%;
+      min-width: 768px;
+      max-width : 1024px;
+      margin: 0 auto;
+    
+      .feedback__form {
+        width: 90%;
+        padding: 50px 0;
+    
+    
+        textarea {
+          width: 100%;
+          max-width: 768px;
+        }
+      }
+    }
+
+  } 

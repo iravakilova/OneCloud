@@ -92,3 +92,31 @@
       }
     }
   }
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px){
+
+    .portfolio {
+      min-width : 768px;
+      max-width : 1024px;
+    
+      .portfolio__top {
+        min-width : 768px;
+        max-width : 1024px;
+        min-height: 200px;
+      }
+    
+      .portfolio__navigation {
+        padding: 30px 0;
+    
+        .portfolio__link {
+          font-size: 10px;
+    
+          &:hover {
+            padding-bottom: 4px;
+            border-bottom: 2px solid #0075d0;
+          }
+        }
+      }
+    }
+
+  }
