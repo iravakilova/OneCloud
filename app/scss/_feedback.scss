@@ -116,4 +116,47 @@
       }
     }
 
-  } 
+  }
+  
+  @media only screen and (min-width : 320px) and (max-width : 480px){
+
+    .feedback {
+      width: 100%;
+      min-width : 320px;
+      max-width : 480px;
+      margin: 0 auto;
+    
+      .feedback__form {
+        width: 90%;
+        padding: 50px 0px;
+    
+        textarea {
+          width: 100%;
+          max-width: 275px;
+        }
+      }
+    
+      .feedback__social {
+        width: 100%;
+        min-width : 320px;
+        max-width : 480px;
+        min-height: 100px;
+        margin: 0 auto;
+        background: url(../img/feedback__bg.png) no-repeat center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .feedback__img {
+          width: 60px;
+          height: 60px;
+          margin-right: 10px;
+    
+          &:hover {
+            background-color: #0075d0;
+          }
+        }
+      }
+    }
+
+  }

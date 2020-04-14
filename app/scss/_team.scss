@@ -152,3 +152,67 @@
 
 }
 
+@media only screen and (min-width : 320px) and (max-width : 480px){
+
+  .team {
+    min-width : 320px;
+    max-width : 480px;
+  
+    .team__gallery {
+      width: 100%;
+      max-width : 320px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      margin: 50px auto;
+  
+      .team__item {
+        font-size: 10px;
+        margin-right: 10px;
+
+        &:last-child{
+          margin-right: 0px;
+        }
+  
+        .team__image {
+          position: relative;
+
+          img{
+            display: block;
+            width: 70%;
+          }
+
+          .team__avatar{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+          }
+
+          .team__social {
+            
+            img{
+              width: 25%;
+              height: auto;
+            }
+          }
+        }
+  
+        p {
+          padding: 10px 0;
+        }
+  
+        .team-circle {
+          display: none;
+          margin-top: 0px;
+        }
+      }
+    }
+  
+    .join {
+      min-width : 320px;
+      max-width : 480px;
+    }
+  }
+
+}

@@ -79,8 +79,30 @@
     }
 }
 
-// @media only screen and (min-width : 320px) and (max-width : 480px){
+@media only screen and (min-width : 320px) and (max-width : 480px){
 
-// }
+    .container{
+        width: 90%;
+        min-width : 320px;
+        max-width : 480px;
+    }
+    .title-black{
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    .article-black{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .title-white{
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    .article-white{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+
+}
 
 

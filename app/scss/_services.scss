@@ -83,6 +83,44 @@
         }
       }
     }
-
-
   }
+
+  @media only screen and (min-width : 320px) and (max-width : 480px){
+
+    .services {
+      width: 100%;
+      min-width : 320px;
+      max-width : 480px;
+    
+      .services__inner {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+        .services__item {
+          margin-bottom: 20px;
+    
+          .services__image {
+            width: 100px;
+            height: 100px;
+          }
+    
+          p {
+            padding-top: 10px;
+          }
+    
+          &:hover {
+            p {
+              color: #0075d0;
+            }
+    
+            .services__image {
+              background-color: #0075d0;
+            }
+          }
+        }
+      }
+    }
+
+  } 
