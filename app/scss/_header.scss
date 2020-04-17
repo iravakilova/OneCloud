@@ -40,6 +40,10 @@
             line-height: 24.83px;
           }
         }
+
+        .burger-menu{
+          display: none;
+        }
   
         .header__menu {
           font-size: 14px;
@@ -165,26 +169,40 @@
           display: flex;
           justify-content: space-between;
           align-items: start;
-          flex-direction: column;
-          padding: 20px 0;
+          padding: 20px 0px;
     
           .header__logo {
-    
+
             p {
               font-size: 16px;
               line-height: 20px;
             }
           }
-    
-          .header__menu {
-            font-size: 10px;
-            line-height: 20px;
-            flex-direction: column;
-    
-            a {
-              margin-left: 10px;
+          .header__nav{
+
+            &:hover .header__menu{
+              display: block;
             }
-          }
+            .burger-menu{
+              display: block;
+              margin: 0 auto;
+              margin-top: 25%;
+            }
+      
+            .header__menu {
+              display: none;
+              font-size: 10px;
+              line-height: 20px;
+              margin-top: 15px;
+      
+              a {
+                margin-left: 0px;
+                margin-top: 3px;
+                display: block;
+                text-align: center;
+              }
+            }
+          }   
         }
       }
     
@@ -196,12 +214,15 @@
         }
     
         h2 {
-          font-size: 20px;
+          font-size: 12px;
           padding-top: 15px;
         }
     
         button {
-          margin: 30px 0;
+          font-size: 14px;
+          margin: 20px 0;
+          width: 120px;
+          min-height: 30px;
         }
       }
     }
